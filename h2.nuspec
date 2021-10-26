@@ -13,13 +13,14 @@
 	<tags>h2 sql in memory database for .NET 5.0 Unit Test</tags>
 	<icon>icon.png</icon>
 	<dependencies>
-		<group targetFramework=".NET5.0" />
+      <group targetFramework="net5.0" />
 	</dependencies>
   </metadata>
   
+	
   <files>
-    <file src="h2.dll" target="lib\net50\h2" />
-	<file src="dl\ikvm-bin-net_core_compat\bin\*.dll" target="lib\net50\ikvm" />
+    <file src="h2.dll" target="lib\net5.0\h2.dll" />
+	<file src="dl\ikvm-bin-net_core_compat\bin\*.dll" target="lib\net5.0\IKVM\" />
 	<file src="icon.png" target="" />
   </files>
 </package>
