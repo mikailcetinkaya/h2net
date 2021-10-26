@@ -1,5 +1,5 @@
-# H2 .NET NuGet package
-This repository contains the build scripts necessary to generate the H2 .NET NuGet package.
+# H2 .NET NuGet package for .NET 5.0
+This repository contains the build scripts necessary to generate the H2 .NET NuGet package for .NET 5.0.
 # About
 H2 (http://www.h2database.com/) is an open source SQL database written in Java. Although it is technically possible to access an H2 database via ADO.NET using a PostgreSQL connection, this has limitations and can be difficult to get working reliably. By using IKVM.NET (https://www.ikvm.net/), the Java bytecode implementing the H2 database can be executed under the .NET runtime, exposing the Java class structure for H2 to .NET.
 # Licence
