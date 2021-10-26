@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>h2.NET50</id>
-    <version>1.4.199.0</version>
+    <version>1.4.199.1</version>
     <authors>H2 Group</authors>
     <owners>Mikail Cetinkaya</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,7 +10,7 @@
 	<copyright>Copyright 2004-2019 H2 Group</copyright>
 	<license type="expression">MPL-2.0 OR EPL-1.0</license>
 	<projectUrl>https://github.com/mikailcetinkaya/h2net</projectUrl>
-	<tags>h2 sql database for .NET 5.0</tags>
+	<tags>h2 sql in memory database for .NET 5.0 Unit Test</tags>
 	<icon>icon.png</icon>
 	<dependencies>
 		<group targetFramework=".NET5.0" />
