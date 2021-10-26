@@ -3,8 +3,8 @@
 set H2ZIP=http://www.h2database.com/h2-2019-03-13.zip
 set H2Version=1.4.199
 
-set IKVMZIP=http://www.frijters.net/ikvmbin-8.1.5717.0.zip
-set IKVMVersion=8.1.5717.0
+set IKVMZIP=https://github.com/ams-ts-ikvm/ikvm-bin/archive/refs/heads/net_core_compat.zip
+set IKVMVersion=bin-net_core_compat
 
 set NUGETURL=https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 
@@ -21,7 +21,7 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('%IKVMZIP%', 'ikvm.
 powershell -Command "Expand-Archive ikvm.zip -DestinationPath dl"
 
 :got_ikvm
-dl\ikvm-%IKVMVersion%\bin\ikvmc -target:library dl\h2\bin\h2-%H2Version%.jar -keyfile:h2.snk -version:%H2Version%.0 -out:h2.dll -assembly:h2
+dl\ikvm-%IKVMVersion%\bin\ikvmc -target:library dl\h2\bin\h2-%H2Version%.jar -version:%H2Version%.0 -out:h2.dll -assembly:h2
 
 powershell -Command "(New-Object Net.WebClient).DownloadFile('%NUGETURL%', 'nuget.exe')"
 nuget pack h2.nuspec

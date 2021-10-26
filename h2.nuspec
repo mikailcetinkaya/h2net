@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>h2</id>
+    <id>h2.NET50</id>
     <version>1.4.199.0</version>
     <authors>H2 Group</authors>
-    <owners>Owen Rudge</owners>
+    <owners>Mikail Cetinkaya</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>.NET conversion (using IKVM.NET) of the H2 SQL database library.</description>
+    <description>.NET 5.0 conversion (using IKVM.NET) of the H2 SQL database library.</description>
 	<copyright>Copyright 2004-2019 H2 Group</copyright>
 	<license type="expression">MPL-2.0 OR EPL-1.0</license>
-	<projectUrl>https://github.com/orudge/h2net</projectUrl>
-	<tags>h2 sql database</tags>
-    <dependencies>
-      <dependency id="IKVM" version="[8.1.5717]" />
-    </dependencies>
+	<projectUrl>https://github.com/mikailcetinkaya/h2net</projectUrl>
+	<tags>h2 sql database for .NET 5.0</tags>
+	<icon>icon.png</icon>
+	<dependencies>
+		<group targetFramework=".NET5.0" />
+	</dependencies>
   </metadata>
   
   <files>
-    <file src="h2.dll" target="lib\net20" />
+    <file src="h2.dll" target="lib\net50\h2" />
+	<file src="dl\ikvm-bin-net_core_compat\bin\*.dll" target="lib\net50\ikvm" />
+	<file src="icon.png" target="" />
   </files>
 </package>
